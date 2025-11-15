@@ -15,4 +15,5 @@ class Config:
     epochs = 50
     mlp_hidden = 4*embedding_dimension
     dataset_fraction = 1.0
+    isAugmenting = 0
     
