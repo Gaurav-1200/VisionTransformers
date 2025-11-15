@@ -9,7 +9,7 @@ class Config:
     img_size =  32
     num_patches = ((img_size - patch_size) // stride + 1) ** 2
     embedding_dimension = 128
-    attention_heads = 8
+    attention_heads = 4
     transformers_blocks = 4
     learning_rate = 0.001
     epochs = 50

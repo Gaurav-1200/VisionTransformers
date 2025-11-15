@@ -9,7 +9,7 @@ class Encoder(nn.Module):
         self.attention_head = config.attention_heads
         self.mlp_hidden = config.mlp_hidden
         self.layerNorm1 = nn.LayerNorm(self.embedding_dimension)
-        self.multihead_attention = nn.MultiheadAttention(self.embedding_dimension, self.attention_head,batch_frst= True)
+        self.multihead_attention = nn.MultiheadAttention(self.embedding_dimension, self.attention_head,batch_first= True)
         self.layerNorm2 = nn.LayerNorm(self.embedding_dimension)
         self.MLP = nn.Sequential(
             nn.Linear(self.embedding_dimension,self.mlp_hidden),
